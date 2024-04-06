@@ -107,6 +107,7 @@ macro_rules! impl_platform_host {
         }
 
         /// Contains a platform specific [`Host`] implementation.
+        #[derive(Debug)]
         pub enum HostInner {
             $(
                 $(#[cfg($feat)])?
